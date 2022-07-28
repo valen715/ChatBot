@@ -30,6 +30,8 @@ trainer = ChatterBotCorpusTrainer(bot)
 docs = ['feedbacker.yml']
 
 for doc in docs:
+    print('voy a imprimir')
+    print(doc)
     trainer.train(f'./corpus/{doc}')
 
 
@@ -43,6 +45,7 @@ def entrenamiento():
 
 @app.post('/entrenar')
 def entrenar():
+    print(request.values)
     pregunta = request.values.get('pregunta')
     respuesta = request.values.get('respuesta')
     with open('./corpus/feedbacker.yml','a',encoding='utf-8') as f:

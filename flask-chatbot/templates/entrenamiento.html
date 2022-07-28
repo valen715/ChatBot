@@ -5,23 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="entrenamiento.css">
     <title>Document</title>
+    
 </head>
 
 <body>
-    <form action="/entrenar" method="post" onsubmit="alert('Formulario de entrenamiento enviado');">
-        <h1>ENTRENA ROBOT</h1>
+    <form class="container" action="/entrenar" method="post" onsubmit="alert('Formulario de entrenamiento enviado');">
+        <h1 class="hola">ENTRENA ROBOT</h1>
         <label for="pregunta">
             Pregunta:
         </label>
-        <input type="text" id="pregunta" name="pregunta">
+        <input class ="formul" type="text" id="pregunta" name="pregunta" placeholder="Ingresa tu pregunta">
         <label for="respuesta">
             respuesta:
         </label>
-        <input type="text" id="respuesta" name="respuesta">
-        <input type="submit" value="enviar entrenamiento">
+        <input class ="formul" type="text" id="respuesta" name="respuesta"placeholder="Ingresa tu respuesta">
+        <input  class ="btn1" type="submit" value="enviar entrenamiento">
     </form>
-    <a href="/">volver inicio</a>
+    <a href="/" class="btn round">volver inicio</a>
+    <img src="../static/bmo.png" class="img1" alt="">
 </body>
 
 </html>
